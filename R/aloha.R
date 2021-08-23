@@ -29,5 +29,9 @@ say_aloha <- function(name, color) {
     cat(crayon::bgMagenta(message))
   }
 
+    else if (color == "red") {
+
+    cat(crayon::bgRed(message))
+  }
 
 }
