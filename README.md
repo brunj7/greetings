@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of `greetings` is to say aloha to friend.
+The goal of `greetings` is to say aloha to friend and to be used as a simple package to teach R package development.
 
 ## Installation
 
