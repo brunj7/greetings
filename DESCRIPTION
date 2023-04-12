@@ -4,10 +4,10 @@ Title: Say aloha to a friend
 Version: 0.1.0
 Authors@R: c(person("Irene", "Steves", 
                 comment = c(ORCID = "0000-0002-5511-9717", "https://github.com/isteves"), 
-                role = c("cre", "aut")),
+                role = "aut"),
              person("Mitchell", "Maier", 
                 comment= c(ORCID = "0000-0001-6955-0535"), 
-                role = "aut"),
+                role = c("cre", "aut")),
              person("Julien", "Brun", 
                 email = "brun@nceas.ucsb.edu", 
                 comment = c(ORCID = "0000-0002-7751-6238"),
