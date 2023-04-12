@@ -11,7 +11,7 @@ Authors@R: c(person("Irene", "Steves",
              person("Julien", "Brun", 
                 email = "brun@nceas.ucsb.edu", 
                 comment = c(ORCID = "0000-0002-7751-6238"),
-                role = c("cre", "aut"))
+                role = c("cre", "aut")))
 Maintainer: The package maintainer <brun@nceas.ucsb.edu>
 Description: how to best greet a good friend
 License: MIT + file LICENSE
