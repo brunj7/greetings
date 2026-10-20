@@ -16,7 +16,7 @@ remotes::install_github("brunj7/greetings")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example that shows you how to solve a common problem:
 
 ``` r
 library(greetings)
@@ -26,8 +26,9 @@ say_aloha("Allison")
 
 ## Teaching materials
 
-This is the teaching materials we used to teach a short introduction to R packages using the greeting package:
-https://docs.google.com/document/d/1Ti4ooIkUmnBisw-xacnM1TbSMIAOHw5J1_mGk9hsATg/edit?usp=sharing
+Here are the teaching materials used to teach a short 7 fun introduction to R packages using the `greetings` package:
+
+
 
 ## Aknowledgement
 
