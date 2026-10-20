@@ -35,3 +35,6 @@ This package is adapted from "How to Create an R Package" developed by Irene Ste
 
 Original material: https://github.com/isteves/r-pkg-intro
 
+## License
+
+This work is licensed under CC0, however, we appreciate you citing this work when reusing any content :)
