@@ -134,17 +134,15 @@ Now your package is built (and it will automatically attach, so it’s ready to 
 
 ### Other Thoughts
 
-you can create a package by many ways. If you were using a computing environment without RStudio installed, the with the {`usethis` package ([https\://usethis.r-lib.org/](https://usethis.r-lib.org/)) is a great way to do so:
+You can create a package in many ways. If you were using a computing environment without RStudio installed, then the `usethis` package ([https\://usethis.r-lib.org/](https://usethis.r-lib.org/)) is a great way to do so:
 
-1. In RStudio (not in a project), in the Console run:   
+1. From RStudio, without being in a project, run the follwong command at the R Console:   
    `pkgpath <- file.path("~/Desktop", "alohayourinitials")`  
-   
 
    For example, Julien’s would be alohajb. Then, create the package by running (in the Console): 
- 
    `usethis::create_package(pkgpath)`  
      
    	Then initialize the git repository by running (in the Console):   
    	`usethis::use_git()`
 
-2. Commit the R package file structure
+2. Commit your R package file structure
