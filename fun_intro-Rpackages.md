@@ -1,6 +1,4 @@
-# R packages
-
-*Based on this example: [https\://github.com/isteves/r-pkg-intro](https://github.com/isteves/r-pkg-intro)* 
+# Introduction to R package development
 
 ## Why?
 
@@ -31,11 +29,13 @@ Let’s reproduce the greetings package: [https\://github.com/brunj7/greetings](
 
 And yes, you can install an R package directly from GitHub  🤯
 
-`devtools::install_github("brunj7/greetings")`  
-`library(greetings)`  
-`greetings::say_aloha("Allison")`
+```R
+devtools::install_github("brunj7/greetings")
+library(greetings)
+greetings::say_aloha("Allison")
 
-`#> Aloha, Allison 🌴 ☀️ 🌊`
+#> Aloha, Allison 🌴 ☀️ 🌊
+```
 
 ### Let’s recreate this package\!\!
 
@@ -43,7 +43,7 @@ And yes, you can install an R package directly from GitHub  🤯
 
 **Create your version of the aloha R package\!**
 
-1. Using RStudio. Here we will be using RStudio to create a new project selecting Create R package
+1. Using RStudio. Here we will be using RStudio to create a new project, selecting Create R package
 
    ![][image2]
 
@@ -58,25 +58,27 @@ And yes, you can install an R package directly from GitHub  🤯
 3. Create a new R Script  
    Copy/paste the function `say_aloha` (below) into the script  
      
-   `say_aloha <- function(name, print = TRUE) {`  
+   ```R
+   say_aloha <- function(name, print = TRUE) {`  
      
-     `message <- paste("Aloha,",`  
-                      `name,`  
-                      `emo::ji("palm_tree"),`  
-                      `emo::ji("sunny"),`  
-                      `emo::ji("ocean"))`  
+     message <- paste("Aloha,",  
+                      name,
+                      emo::ji("palm_tree"),
+                      emo::ji("sunny"),
+                      emo::ji("ocean"))  
      
-     `if (print) {`  
-       `cat(crayon::bgGreen(message))`  
-     `}`  
+     if (print) {  
+       cat(crayon::bgGreen(message))  
+     }  
      
-     `invisible(message)`  
-   `}`
+     invisible(message)  
+   }
+   ```
 
-4. Save the script in the /R folder  
-5. Commit your changes with git
+5. Save the script in the /R folder  
+6. Commit your changes with git
 
-3\. Link this local repository to GitHub by running the following in Console (this creates a GitHub repo and configures as git remote for your project)  
+3\. Link this local repository to GitHub by running the following in the R console (this creates a GitHub repo and configures it as a git remote for your project)  
 `usethis::use_github()`  
 	Follow the instructions until your web browser opens your repository. 
 
@@ -84,23 +86,25 @@ And yes, you can install an R package directly from GitHub  🤯
 
 1. Document the function using a Roxygen skeleton (Code \> Insert Roxygen Skeleton)  
 2. Run `devtools::document()` in the Console to update the package documentation  
-   See now there is a .Rd file in the  /man folder   
+   See, now there is a .Rd file in the  `/man` folder   
      
    Notes:   
-- this also adds the function name to the NAMESPACE file to make it available to the user of the package.  
+- This also adds the function name to the NAMESPACE file to make it available to the user of the package.  
 - This creates the documentation of the function that you access with `?say_aloha`
 
   Don’t forget to commit changes using git\!  
     
 3. Update the DESCRIPTION file following instructions  
-4. Add the dependencies of your package at the bottom of the Description file  
-   `Imports: crayon, emo`  
-   `Remotes: hadley/emo`  
-   `Suggests: testthat,`  
-       `knitr,`  
-       `rmarkdown`  
-   `VignetteBuilder: knitr`  
-5. Run `devtools::document()` to update the package documentation
+4. Add the dependencies of your package at the bottom of the DESCRIPTION file  
+   ```
+   Imports: crayon, emo
+   Remotes: hadley/emo
+   Suggests: testthat,
+       knitr, 
+       rmarkdown
+   VignetteBuilder: knitr
+   ```
+6. Run `devtools::document()` to update the package documentation
 
 5\. Build your package\!   
 Run `devtools::build()` to build the package, or use the “install and restart” button in the Build tab in the RStudio  
@@ -121,9 +125,8 @@ you can create a package by many ways. If you were using a computing environment
    
 
    For example, Julien’s would be alohajb. Then, create the package by running (in the Console): 
-
-     
-   usethis::`create_package(pkgpath)`  
+ 
+   `usethis::create_package(pkgpath)`  
      
    	Then initialize the git repository by running (in the Console):   
    	`usethis::use_git()`
