@@ -12,13 +12,30 @@
 
 Mostly organizing your work in a file structure plus a few special files that help to bundle everything together.
 
-![][image1]
+### Package Structure
+
+Mostly a collection of folders with specific files. Here are the components you will always have:
+
+- R code `/R`
+- Documentation** `/man`
+- Package metadata `DESCRIPTION`
+- Namespace `NAMESPACE
+
+Here are other components:
+
+- Data `/data`
+- Vignettes `/vignettes`
+- Tests `/tests`
+- Compiled code your package relies on `/src`
+- Installed files `/inst`
+
+Other components are also possible.
 
 ## How?
 
 2 helpful packages when developing R packages:
 
-- `devtools`  
+- `devtools`
 - `usethis`
 
 And of course, RStudio helps you to build packages 🙂
