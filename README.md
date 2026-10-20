@@ -26,9 +26,8 @@ say_aloha("Allison")
 
 ## Teaching materials
 
-Here are the teaching materials used to teach a short 7 fun introduction to R packages using the `greetings` package:
+[Here](fun_intro-Rpackages.md) is the short tutorial used to teach a short & fun introduction to R packages using the `greetings` package:
 
-fun_intro-Rpackages.md
 
 ## Aknowledgement
 
