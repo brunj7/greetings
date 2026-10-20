@@ -48,6 +48,7 @@ And yes, you can install an R package directly from GitHub  🤯
 
 ```R
 devtools::install_github("brunj7/greetings")
+
 library(greetings)
 greetings::say_aloha("Allison")
 
